@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Lexend+Deca:wght@200;300;400;500&display=swap");
+
+:root {
+   --primary-colour: #595e76;
+   --secondary-colour: #84a0c6;
+   --background: #161821;
+   --correct: #d1d0c5;
+   --wrong: #7e2a33;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body,
+html {
+   font-family: "Roboto Mono", monospace;
+   background-color: var(--background);
+   scroll-behavior: smooth;
+}
+
+a {
+   text-decoration: none;
+   color: var(--primary-colour);
+}
+
+button,
+textarea,
+input {
+   background: 0;
+   outline: 0;
+   border: 0;
+   cursor: pointer;
+   font-family: inherit;
+}
+
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+}
