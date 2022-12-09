@@ -1,10 +1,11 @@
-import "./App.css";
+import "./styles/App.css";
+
+import { Header } from "./components";
 
 const App = () => {
    return (
       <>
-         {/* Coming soon */}
-         {/* Coming soon */}
+         <Header />
       </>
    );
 };
