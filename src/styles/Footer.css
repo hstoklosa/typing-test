@@ -1,0 +1,32 @@
+footer .container {
+   min-height: 15vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-size: 0.9rem;
+   color: var(--primary-colour);
+   margin: 1rem;
+}
+
+.footer-icon {
+   margin-right: 0.5rem;
+   font-size: 1rem;
+   color: var(--primary-colour);
+}
+
+.footer-link,
+.footer-icon {
+   transition: all 0.2s ease-in;
+}
+
+.footer-link:hover,
+.footer-link:hover .footer-icon {
+   color: var(--hover);
+}

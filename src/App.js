@@ -1,11 +1,12 @@
 import "./styles/App.css";
 
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 
 const App = () => {
    return (
       <>
          <Header />
+         <Footer />
       </>
    );
 };
