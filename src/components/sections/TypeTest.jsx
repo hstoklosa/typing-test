@@ -1,6 +1,7 @@
 import "../../styles/TypeTest.css";
 
 import { useState, useEffect } from "react";
+import { ModeSwitch } from "../index";
 
 const TypeTest = () => {
    const [wordType, setWordType] = useState("words");
@@ -8,9 +9,15 @@ const TypeTest = () => {
       return require(`../../misc/${wordType}.json`);
    });
 
+   useEffect(() => {
+      setWords(require(`../../misc/${wordType}.json`));
+   }, [wordType]);
+
    return (
       <section id="type-test">
-         <div className="container">{/* COMING SOON */}</div>
+         <div className="container">
+            <ModeSwitch wordType={wordType} setWordType={setWordType} />
+         </div>
       </section>
    );
 };
