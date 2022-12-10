@@ -15,7 +15,9 @@ footer .container {
    margin: 1rem;
 }
 
-.footer-icon {
+footer .footer-icon {
+   display: flex;
+   align-items: center;
    margin-right: 0.5rem;
    font-size: 1rem;
    color: var(--primary-colour);
