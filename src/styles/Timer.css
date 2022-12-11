@@ -1,0 +1,41 @@
+#timer {
+   display: flex;
+   align-items: center;
+}
+
+.time-left {
+   font-size: 2rem;
+   font-weight: 400;
+   color: #84a0c6;
+   user-select: none;
+}
+
+.radio-container {
+   display: flex;
+}
+
+.radio-button {
+   display: flex;
+   align-items: center;
+   user-select: none;
+}
+
+.radio-button input {
+   visibility: hidden;
+}
+
+.radio-button input:checked + label {
+   color: #84a0c1;
+}
+
+.radio-button label {
+   font-weight: 500;
+   color: #595e76;
+   margin-left: 0.5rem;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+
+.radio-button label:hover {
+   color: #c6c8d1;
+}
