@@ -6,3 +6,12 @@
    justify-content: center;
    position: relative;
 }
+
+.type-settings {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 600px;
+   width: 90%;
+}

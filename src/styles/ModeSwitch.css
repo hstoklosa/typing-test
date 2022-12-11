@@ -1,5 +1,18 @@
 .current-mode {
    color: var(--primary-colour);
+   font-size: 0.9rem;
+   transition: all 0.2s ease-in-out;
+   user-select: none;
+}
+
+.current-mode:hover {
+   color: var(--hover);
+}
+
+.mode-icon {
+   font-size: 1.2rem;
+   margin-left: 0.5rem;
+   vertical-align: bottom;
 }
 
 .mode-select_wrapper {

@@ -16,8 +16,10 @@ const TypeTest = () => {
    return (
       <section id="type-test">
          <div className="container">
-            <ModeSwitch wordType={wordType} setWordType={setWordType} />
-            <Timer timeLeft={timeLeft} setInitialTime={setInitialTime} />
+            <div className="type-settings">
+               <ModeSwitch wordType={wordType} setWordType={setWordType} />
+               <Timer timeLeft={timeLeft} setInitialTime={setInitialTime} />
+            </div>
 
             {/* <div className="words">{}</div>
             <textarea type="text" value={userText} onChange={({ target }) => setUserText(target.value)} /> */}

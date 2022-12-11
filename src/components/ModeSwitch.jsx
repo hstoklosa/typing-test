@@ -1,7 +1,8 @@
 import "../styles/ModeSwitch.css";
 
 import { useState, useEffect, useRef } from "react";
-
+import { IconContext } from "react-icons";
+import { IoEarthSharp } from "react-icons/io5";
 import useOutsideClick from "../hooks/useOutsideClick";
 
 const ModeSwitch = ({ wordType, setWordType }) => {
@@ -20,6 +21,9 @@ const ModeSwitch = ({ wordType, setWordType }) => {
       <div className={`word-select`}>
          <button className="current-mode" onClick={() => setModeMenu(true)}>
             {wordType}
+            <IconContext.Provider value={{ className: "mode-icon" }}>
+               <IoEarthSharp />
+            </IconContext.Provider>
          </button>
          <div className={`mode-select_wrapper ${modeMenu ? "show" : "hide"}`}>
             <div ref={wrapperRef} className="word-select_menu">
